@@ -1,0 +1,105 @@
+.main-contain-pr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+  background-color: #f0f0f0;
+}
+
+.ps-form-container-pr {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  max-width: 700px;
+  width: 100%;
+  height: auto; /* Let the container grow to fit content */
+  min-height: 100px; /* Set a higher minimum height */
+}
+
+.ps-form-pr {
+  display: flex;
+  flex-direction: column;
+  height: 70%; /* Ensure the form takes up the full height of the container */
+}
+
+.ps-form-pr h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4CBB17;
+}
+
+.input-field-pr {
+  margin-bottom: 15px;
+  padding: 10px; /* Increased padding for larger field area */
+  font-size: 16px; /* Increased font size for better readability */
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.textarea-field-pr {
+  resize: vertical; /* Allows the textarea to be resized vertically */
+  min-height: 70px; /* Sets a minimum height for the textarea */
+}
+
+.button-container-pr {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.l-btn-pr {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 16%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.l-btn-pr:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+.l-btn-pr:active {
+  background-color: #388e3c;
+  transform: translateY(0);
+}
+
+.skills-container-pr {
+  margin-top: 20px;
+}
+
+.skills-container-pr h5 {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.skills-list-pr {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-list-pr li {
+  display: flex;
+  align-items: center;
+}
+
+.skill-checkbox-pr {
+  margin-right: 10px;
+}
+
+.search-bar-pr {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}

@@ -1,0 +1,141 @@
+.event-popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    padding: 20px; /* Add padding to avoid edge overlap */
+}
+
+.event-popup-content {
+    max-width: 700px;
+    max-height: 95%; /* Limit the height of the container */
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px; /* Reduce padding */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 0.3s ease; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.popup-header h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #999;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close-btn:hover {
+    color: #555;
+}
+
+.event-popup-image {
+    width: 100%;
+    max-height: 270px; /* Adjust max height for the image */
+    object-fit: cover;
+    border-radius: 10px; /* Remove separate border-radius */
+    margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.event-popup-details {
+    padding: 15px; /* Reduce padding */
+}
+
+.event-popup-details p {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #555;
+}
+
+.event-popup-details p svg {
+    margin-right: 10px; /* Add margin for icon spacing */
+    color: #4CAF50; /* Icon color */
+}
+
+.event-popup-details button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px; /* Reduce padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    display: block; /* Block element */
+    margin-left: auto;
+    margin-right: auto; /* Center the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.event-popup-details button:hover {
+    background-color: #45a049;
+}
+
+/* Additional advanced styling for a professional look */
+.event-popup-details p {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.event-popup-details {
+    border-top: 1px solid #eee;
+    padding-top: 15px; /* Reduce padding */
+    margin-top: 20px;
+}
+
+.popup-header h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #4CAF50; /* Theme color */
+}
+
+.event-popup-content {
+    border-top: 4px solid #4CAF50; /* Add a border at the top */
+}
+
+.close-btn {
+    font-size: 28px;
+    color: #4CAF50; /* Theme color */
+}
+
+.close-btn:hover {
+    color: #333; /* Darker color on hover */
+}

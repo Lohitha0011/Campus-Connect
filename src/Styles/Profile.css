@@ -1,0 +1,86 @@
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+
+.profile-details {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details h2 {
+  font-size: 28px;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.profile-details p strong {
+  color: #000;
+  font-weight: bold;
+}
+
+.profile-skills {
+  margin-top: 20px;
+}
+
+.profile-skills strong {
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.profile-skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #4CBB17;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.skill-tag:hover {
+  background-color: #398a12;
+}
+
+.edit-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CBB17;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.edit-btn:hover {
+  background-color: #398a12;
+}

@@ -1,0 +1,79 @@
+/* Container styles */
+.my-jobs-container {
+  margin: 60px auto; /* Increased top margin */
+  padding: 40px;
+  border-radius: 8px;
+  width: 80%; /* Adjusted width */
+  background-color: transparent; /* Removed background color */
+}
+
+/* Title styles */
+.my-jobs-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #4CBB17; /* Green color */
+  text-align: center;
+}
+
+/* Job item styles */
+.my-jobs-item {
+  margin: 20px auto; /* Centered and added margin */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Decreased width */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  background-color: #ffffff; /* Added background color */
+}
+
+.my-jobs-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover effect for shadow */
+  transform: translateY(-5px); /* Hover effect for lift */
+}
+
+/* Job item title styles */
+.my-jobs-item h3 {
+  text-align: left; /* Align job titles to the left */
+  color: #000000; /* Bold black text */
+  font-weight: bold; /* Bold text */
+}
+
+/* Button styles */
+.my-jobs-btn {
+  background-color: #4CBB17; /* Green color */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-jobs-btn:hover {
+  background-color: #3a9611; /* Darker green on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .my-jobs-container {
+    margin: 20px 10px;
+    padding: 15px;
+    width: 90%; /* Adjusted width for small screens */
+  }
+  
+  .my-jobs-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .my-jobs-item {
+    padding: 10px;
+    margin: 15px auto;
+    width: 90%; /* Adjusted width for small screens */
+  }
+  
+  .my-jobs-btn {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}

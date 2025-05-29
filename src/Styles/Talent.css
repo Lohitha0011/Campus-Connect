@@ -1,0 +1,52 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px; /* Adjusted max width */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 120px;
+}
+
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.textarea-field {
+  height: 100px; /* Adjust the height as needed */
+  resize: vertical; /* Allows the user to resize the textarea vertically */
+}
+
+.applys {
+  width: 100%; /* Adjusted width */
+  padding: 10px;
+  background-color: #4CBB17;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.applys:hover {
+  background-color: #45a049;
+}

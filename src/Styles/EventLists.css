@@ -1,0 +1,96 @@
+.event-list-container {
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.named {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: #333;
+}
+
+.events-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center; /* Center items */
+}
+
+.event-item {
+  width: 320px; /* Fixed width for better visibility */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: #efecec;
+}
+
+.event-item:hover {
+  transform: translateY(-5px);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px; /* Adjusted height for better visibility */
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 15px;
+}
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.event-date {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.event-day {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.event-month {
+  text-transform: uppercase;
+}
+
+.event-status {
+  display: flex;
+  align-items: center;
+}
+
+.registered-badge {
+  background-color: #28a745;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+}
+
+.event-details {
+  margin-top: 10px;
+}
+
+.event-details p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.event-details p svg {
+  margin-right: 5px;
+}

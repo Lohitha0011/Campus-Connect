@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.main-container {
+  text-align:start;
+  padding: 80px;
+  background-color: #f5f5f5; /* Light gray background */
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  
+}
+
+.browse-jobs-heading {
+  font-size: 1.7rem; /* Slightly larger for emphasis */
+  margin-bottom: 50px; /* More space for a cleaner look */
+  color: #2c3e50; /* Darker color for better contrast */
+  letter-spacing: 1px; /* Adds spacing between letters */
+   /* Makes heading more prominent */
+   margin-right: 80px;
+   margin-left: 140px;
+}
+
+.browse-jobs-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+   /* Allow items to wrap on smaller screens */
+}
+
+.browse-jobs-box {
+  width: 520px; /* Increased card width */
+  background: linear-gradient(to bottom right, #f0f0f0, #e0f7fa); /* Light gray and light sky blue gradient background */
+  border-radius: 12px; /* More rounded corners */
+  padding: 30px;
+  text-align: start;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft box shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Combined transitions */
+  overflow: hidden; /* Ensures content doesn't spill out */
+}
+
+.browse-jobs-box:hover {
+  transform: translateY(-10px) scale(1.02); /* Lift and slightly enlarge the card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.browse-jobs-box h2 {
+  font-size: 2rem; /* Slightly larger */
+  margin-bottom: 20px;
+  color: #34495e; /* Darker shade for headings */
+  font-weight: 500; /* Bolder font for emphasis */
+}
+
+.browse-jobs-box p {
+  font-size: 1.2rem;
+  color: #7f8c8d; /* Softer gray for text */
+  margin-bottom: 25px; /* More space for better readability */
+  line-height: 1.6; /* Improved line spacing */
+}
+
+.browse-jobs-button {
+  background-color: #4CBB17; /* Green button color */
+  color: #fff; /* White text */
+  padding: 14px 35px; /* Increased padding */
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+}
+
+.browse-jobs-button:hover {
+  background-color: #3a8b12; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly enlarge button on hover */
+}

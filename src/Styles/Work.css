@@ -1,0 +1,149 @@
+/* Work.css */
+
+/* Global Styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+/* Data Item Container Styles */
+
+.all-data {
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  flex-wrap: wrap;
+  justify-content: center; /* Center items horizontally */
+  align-items: flex-start; /* Align items to the top */
+  margin-top: 80px;
+  padding: 20px; /* Add some padding around the container */
+  background-color: #fff; /* Add a background color to the container */
+  border-radius: 12px; /* Add a subtle border radius */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  overflow: hidden; /* Prevent overflow */
+}
+
+/* Data Item Styles */
+
+.data-item {
+  background-color: #ffffff;
+  padding: 20px; /* Increase padding for better layout */
+  border: 1px solid #ddd;
+  border-radius: 12px; /* Increase border radius for a more rounded look */
+  margin: 20px; /* Increase margin for better spacing */
+  width: 600px; /* Width of each card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform; /* Improve performance */
+}
+
+.data-item:hover {
+  transform: translateY(-5px); /* Increase translation for a more noticeable effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Remove blur effect on hover */
+}
+
+.data-item h3 {
+  margin: 0 0 12px;
+  color: #333;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: left; /* Update this line to align the title to the left */
+}
+
+.data-item p {
+  margin: 8px 0;
+  color: #666;
+  font-size: 16px; /* Increase font size for better readability */
+  line-height: 1.5; /* Add line height for better text spacing */
+  text-align: justify; /* Justify the paragraph text */
+}
+
+.data-item p strong {
+  color: #333;
+  font-weight: bold; /* Add font weight for better typography */
+}
+
+/* Apply Button Styles */
+
+.apply-btn {
+  display: inline-block;
+  padding: 12px 24px; /* Increase padding for better layout */
+  background-color: #4CBB17;
+  color: #fff;
+  border: none;
+  border-radius: 8px; /* Increase border radius for a more rounded look */
+  cursor: pointer;
+  font-size: 16px; /* Increase font size for better readability */
+  transition: background-color 0.3s ease;
+  margin-top: 16px;
+  width: 180px; /* Increase width for better layout */
+  text-align: center; /* Center the button text */
+  will-change: background-color; /* Improve performance */
+}
+
+.apply-btn:hover {
+  background-color: #45a049;
+}
+
+.apply-btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(2px); /* Add a subtle translation on active state */
+}
+
+/* Advanced CSS Features */
+
+.data-item {
+  perspective: 1000px;
+}
+
+.data-item:hover {
+  transform: translateY(-5px);
+}
+
+.apply-btn {
+  perspective: 1000px;
+}
+
+.apply-btn:hover {
+  transform: scale(1.05);
+}
+
+.apply-btn:active {
+  transform: scale(0.95);
+}
+
+/* Additional Styles */
+
+.all-data::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.data-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.data-item:hover::before {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1200px) {
+ .data-item {
+    width: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+ .data-item {
+    width: 100%;
+  }
+}

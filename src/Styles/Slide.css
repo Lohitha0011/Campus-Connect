@@ -1,0 +1,82 @@
+.carousel-container {
+  max-width: 1120px;
+  margin: auto;
+  padding: 20px;
+}
+
+.carousel-inner {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.carousel-image {
+  max-height: 530px;
+  object-fit: cover;
+  filter: brightness(1); /* Slightly darker to enhance text visibility */
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0; /* Position at the bottom */
+  left: 0;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7); /* Background for better text visibility */
+  padding: 15px; /* Decreased padding */
+  box-sizing: border-box;
+  border-radius: 0 0 15px 15px; /* Match the border radius of the carousel */
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem; /* Increased font size */
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1rem; /* Increased font size */
+  margin-bottom: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+h3{
+  font-size: 1.7rem; /* Slightly larger for emphasis */
+  margin-bottom: 20px; /* More space for a cleaner look */
+  color: #2c3e50; /* Darker color for better contrast */
+  letter-spacing: 1px; 
+  margin-left: 220px;
+  margin-top: 10px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-prev-icon::after {
+  content: '‹';
+  font-size: 30px;
+  color: #fff;
+}
+
+.carousel-control-next-icon::after {
+  content: '›';
+  font-size: 30px;
+  color: #fff;
+}
+
+/* Hide the carousel indicators */
+.carousel-indicators {
+  display: none;
+}

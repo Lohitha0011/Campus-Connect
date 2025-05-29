@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+.intro-container {
+  background-color: #f5f5f5; /* Light gray background */
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Content on left, image on right */
+  padding: 100px;
+  height: calc(100vh - 160px); 
+  font-family: 'Roboto', sans-serif;/* Account for padding and potential header/footer */
+  margin-top: 30px;
+ 
+}
+
+.intro-content {
+  text-align: left; /* Left-aligned text content */
+  max-width: 500px;
+}
+
+.intro-title {
+  font-size: 3.6rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray text */
+}
+
+.intro-text {
+  font-size: 1.4rem;
+  color: #666; /* Lighter gray text */
+  margin-bottom: 40px;
+}
+
+.intro-button {
+  background-color: #4CBB17; /* Green button color */
+  color: #fff; /* White text */
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* Add hover effect */
+}
+
+.intro-button:hover {
+  background-color: #3ead0e; /* Darker green on hover */
+}
+
+.intro-image {
+  width: 50%; /* Adjust image width as needed */
+  height: auto;
+  object-fit: cover;
+
+}
